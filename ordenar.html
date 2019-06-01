@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--HEAD-->
+
+	<meta charset="UTF-8">
+	<title>SMART FOOD</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/armado_ensala.css">
+	<link rel="shortcut icon" href="imagenes/tomate.ico" >
+	<style>
+		body {
+			background-image: url(imagenes/frutas.png);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}		
+	</style>
+
+</head>
+
+<body>
+	
+	<!--HEADER DE LA APLICACIÓN-->
+
+	<nav class="navbar navbar-dark bg-success col-xl-12 ml-auto mr-auto">
+		<div class="mr-auto ml-auto">
+  			<p class="fuente1 fuentegd colorblanco" id="arriba">
+    		<img src="imagenes/tomate.png" width="70" height="70" class="d-inline-block align-center"alt="">
+    		SMART FOOD
+  			</p>
+  		</div>
+
+  	<!--Usuario-->
+
+		<div class="ml-auto mr-auto">
+    		<p class="fuente3 colorblanco boletausuario" href="">USUARIO</p>
+    	</div>
+	</nav>
+
+	<br>
+
+<!--MENU PRINCIPAL-->
+
+	<nav class="navbar navbar-dark colorh1 sticky-top navbar-toggleable-xs">
+		<p class="navbar-brand fuente1" href="homesmart">
+			Menú principal
+		</p>
+
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+
+	<!--OPCIONES DEL MENU-->
+
+		<div class="mr-auto collapse navbar-collapse" id="navbarTogglerDemo01">
+  			<div class="navbar-nav text-center">
+				<a class="nav-item nav-link fuente2 colorarriba" href="homesmart">Inicio&emsp;&emsp;&emsp;&emsp;&emsp;</a>
+			        
+		        <a class="nav-item nav-link fuente2 colorarriba" href="perfilsmart">
+		     		Mi perfil &emsp; &emsp;&emsp;
+			    </a>    
+
+			    <a class="nav-item active nav-link fuente2 colorarriba" href="ordenar">
+			    Ordenar &emsp; &emsp;&emsp;
+		        </a>
+
+				<a class="nav-item nav-link fuente2 colorarriba" href="historialsmart">Historial &emsp; &emsp; &emsp;</a>
+
+				<a class="nav-item nav-link fuente2 colorarriba" id="logout">Salir&emsp; &emsp; &emsp;&emsp;&emsp;</a>
+    		</div>
+		</div>
+	</nav>	
+	<br>
+	<!--CONTENIDO DE LA PAGINA-->
+	<!--ACTUALIZAR PERFIL-->
+	<div id="envase">
+		
+		<div id="verdura" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
+
+			<div id="lechuga" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Lechuga 5</b><img width="140px" height="110px" src="ingredientes/lechuga.png"></div>
+			<div id="jitomate" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Jitomate 5</b><img width="140px" height="110px" src="ingredientes/jitomate.png"></div>
+			<div id="pepino" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Pepino 7.0</b><img width="140px" height="110px" src="ingredientes/pepino.png"></div>	
+			<div id="aguacate" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Aguacate 10</b><img width="140px" height="110px" src="ingredientes/aguacate.png"></div>
+			<div id="cebolla" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Cebolla 5.0 </b><img width="140px" height="110px" src="ingredientes/cebolla.png"></div>
+			<div id="zanahoria" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Zanahorias 10.00</b><img width="140px" height="110px" src="ingredientes/zanahoria.png"></div>
+			<div id="espinacas" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Espinacas 7.50 </b><img width="140px" height="110px" src="ingredientes/espinaca.png"></div>
+			<div id="papas" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Papas 9.00</b><img width="140px" height="110px" src="ingredientes/papas.png"></div>
+		</div>
+		<div id="fruta">
+			<div id="mango" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Mango 10.00</b><img width="140px" height="110px" src="ingredientes/mango.png"></div>
+			<div id="naranja" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Naranja 7.00 </b><img width="140px" height="110px" src="ingredientes/naranja.png"></div>	
+			<div id="durazno" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Durazno 8.50 </b><img width="140px" height="110px" src="ingredientes/durazno.png"></div>
+			<div id="fresa" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Fresa 12.5</b><img width="140px" height="110px" src="ingredientes/fresa.jpg"></div>
+			<div id="kiwi" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Kiwi 13.5</b><img width="140px" height="110px" src="ingredientes/kiwi.png"></div>			
+		</div>
+		<div id="carne">
+			<div id="pollo" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Pollo 20</b><img width="140px" height="110px" src="ingredientes/pollo.jpg"></div>
+			<div id="pescado" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>--Pescado </b><img width="140px" height="110px" src="ingredientes/pescado.png"></div>	
+			<div id="atun" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Atun </b><img width="140px" height="110px" src="ingredientes/atun.png"></div>
+			<div id="salmon" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Salmon 25</b><img width="140px" height="110px" src="ingredientes/salmon.png"></div>
+			<div id="pastor" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Pastor 15</b><img width="140px" height="110px" src="ingredientes/pastor.png"></div>
+			<div id="bistec" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Bistec 15</b><img width="140px" height="110px" src="ingredientes/bistec.jpg"></div>
+			<div id="jamonn" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Jamon 10.5</b><img width="140px" height="110px" src="ingredientes/jamon.png"></div>
+			<div id="huevo" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Huevo 14</b><img width="140px" height="110px" src="ingredientes/huevo.png"></div>
+		</div>
+		<div id="aderezos">
+			<div id="ranch" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Ranch 12.5</b><img width="140px" height="110px" src="ingredientes/ranch.jpg"></div>
+			<div id="mil-islas" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Mil islas 12</b><img width="140px" height="110px" src="ingredientes/mil.png"></div>	
+			<div id="chipotle" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Chipotle 10</b><img width="140px" height="110px" src="ingredientes/chipotle.jpg"></div>
+			<div id="jalapenio" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Jalapenio</b><img width="140px" height="110px" src="ingredientes/jalapenio.png"></div>
+			<div id="aceite" draggable="true"ondragstart="start(event)" ondragend="end(event)"	ondrop="return clonar(event)"><b>-- Aceite </b><img width="140px" height="110px" src="ingredientes/aceite.jpg"></div>
+		</div>
+		<div id="recipiente">
+
+			<div id="list-verd">Verduras</div>
+			<div id="list-fruta">Frutas</div>
+			<div id="list-carne">Carne</div>
+			<div id="list-adere">Aderezo</div>
+		<div id="armar"  ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)"  ondrop="return clonar(event)"></div>
+		<div id="espacio">
+			
+<!--ingresar boton--->
+		
+
+
+
+		</div>
+		</div>
+		<button type="button" class="btn btn-danger btn-lg ml-auto mr-auto">Ordenar</button>
+	</div>
+	
+	<div class="derechaboton">
+		<div class="" id="refdesarrollo">
+			<a class="btn colorh1 fuente5 colorblanco colorarribax" href="#arriba">Volver arriba</a>
+		</div>
+	</div>
+	<br>
+
+<!--FOOTER DE LA APLICACIÓN-->
+
+	<footer class="a bg-success">
+		<div class="container">
+			<div class="main row">
+				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 col-xl-9">
+					<pa>
+						Escuela Superior de Cómputo
+					</pa>
+				</div>
+				
+				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-xl-3">
+					<pa>
+						SMART FOOD © 2019
+					</pa>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<br>
+
+	<!--FOOTER CON LA INFORMACIÓN-->
+	<div class="container">
+		<div class="main row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h1 class="d">
+					INSTITUTO POLITÉCNICO NACIONAL
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<footer class="a bg-success">
+		<div class="container">
+			<div class="main row">
+				<div class="centrarh col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<pa>
+						Developed by Oscar Jair Rodriguez Lara
+					</pa>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal" id="loading" tabindex="-1" role="dialog" aria-labelledby="Cargando" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body" style="text-align: center;">
+					<div class="row">
+						<div class="col-md-12 col-xs-12">
+							<span title="Cargando..." style="font-size:72px">
+								<i class="fa fa-circle-o-notch fa-spin fa-fw"></i>
+							</span>
+						</div>
+						<div class="col-md-12 col-xs-12">
+							<span title="Cargando..." style="font-size:32px">
+								Cargando, por favor, espera...
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="modal fade" id="custom-message" tabindex="-1" role="dialog" aria-labelledby="Mensaje" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"></h4>
+				</div>
+				<div class="modal-body">
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="custom-message-close" class="btn" data-dismiss="modal"></button>
+				</div>
+			</div>
+		</div>
+	</div>			
+
+<!--SCRIPTS JQUERY Y BOOTSTRAP-->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/armar.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#loading').modal('show');
+			if(!localStorage.getItem('logged')){
+				$(location).attr('href', 'index');
+			}
+			function getUserData(){
+				$.ajax({
+					type: "POST",
+					data: {"usernm": localStorage.getItem("id")},
+					url: "https://testingphpzone.com/~pekochu/ipn/escom/endpoints/users/get",
+					success: function(response) {
+						$('#loading').modal('hide');
+						$('.boletausuario').html(response.user.idUsuario);
+					},
+					error: function(xhr, ajaxOptions, thrownError){
+						$('#loading').modal('hide');
+						$('#custom-message').children().find('.modal-title').first().text('No se pudo iniciar sesión').addClass('red');
+						$('#custom-message').children().find('.modal-body').first().html($('<p>').html(xhr.responseJSON.status).addClass('lead'));
+						$('#custom-message').children().find('.modal-footer').first().html($('<button>').attr('data-dismiss', 'modal').attr('class', 'btn btn-success').html('Cerrar'));
+						$('#custom-message-close').text('Cerrar');
+						$('#custom-message').modal('show');
+					}
+				});
+			}
+			setTimeout(getUserData, 5e2);
+		});
+		$('#logout').on('click', function(){
+			localStorage.removeItem('logged');
+			$(location).attr('href', 'index');
+		});
+	</script>
+</body>
+</html>

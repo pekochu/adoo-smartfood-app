@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--HEAD-->
+
+	<meta charset="UTF-8">
+	<title>SMART FOOD</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="shortcut icon" href="imagenes/tomate.ico" >
+	<style>
+		body {
+			background-image: url(imagenes/frutas.png);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}		
+	</style>
+
+</head>
+
+<body>
+	
+<!--HEADER DE LA APLICACIÓN-->
+
+	<nav class="navbar navbar-dark bg-success col-xl-12 ml-auto mr-auto">
+		<div class="mr-auto ml-auto">
+  			<p class="fuente1 fuentegd colorblanco" id="arriba">
+    		<img src="imagenes/tomate.png" width="70" height="70" class="d-inline-block align-center"alt="">
+    		SMART FOOD
+  			</p>
+  		</div>
+
+  	<!--Usuario-->
+
+		<div class="ml-auto mr-auto">
+    		<p class="fuente3 colorblanco boletausuario" href="">USUARIO</p>
+    	</div>
+	</nav>
+
+	<br>
+
+<!--MENU PRINCIPAL-->
+
+	<nav class="navbar navbar-dark colorh1 sticky-top navbar-toggleable-xs">
+		<p class="navbar-brand fuente1" href="homesmart">
+			Menú principal
+		</p>
+
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+
+	<!--OPCIONES DEL MENU-->
+
+		<div class="mr-auto collapse navbar-collapse" id="navbarTogglerDemo01">
+  			<div class="navbar-nav text-center">
+				<a class="nav-item nav-link active fuente2 colorarriba" href="homesmart">Inicio&emsp;&emsp;&emsp;&emsp;&emsp;</a>
+			        
+		        <a class="nav-item nav-link fuente2 colorarriba" href="perfilsmart">
+		     		Mi perfil &emsp; &emsp;&emsp;
+			    </a>    
+
+			    <a class="nav-item nav-link fuente2 colorarriba" href="ordenar">
+			    Ordenar &emsp; &emsp;&emsp;
+		        </a>
+
+				<a class="nav-item nav-link fuente2 colorarriba" href="historialsmart">Historial &emsp; &emsp; &emsp;</a>
+
+				<a class="nav-item nav-link fuente2 colorarriba" id="logout">Salir&emsp; &emsp; &emsp;&emsp;&emsp;</a>
+    		</div>
+		</div>
+	</nav>
+	
+	<br>
+
+<!--CONTENIDO DE LA PAGINA-->
+
+	<div class="container">
+		<div class="row">
+
+	<!--CARRUSEL-->
+
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 ml-auto mr-auto">
+				<div id="carouselH" class="carousel slide carousel-inner carousel-inner img" data-ride="carousel">
+
+				<!--iNDICADORES CARRUSEL-->
+
+	    			<ol class="carousel-indicators">
+						<li data-target="#carouselH" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselH" data-slide-to="1"></li>
+						<li data-target="#carouselH" data-slide-to="2"></li>
+						<li data-target="#carouselH" data-slide-to="3"></li>
+						<li data-target="#carouselH" data-slide-to="4"></li>
+			    	</ol>
+
+			    <!--ITEMS CARRUSEL-->
+
+	    			<div class="carousel-inner">
+
+					<!--CARRUSEL ITEM 1-->
+
+	      				<div class="carousel-item active">
+	        				<img src="imagenes/hh1.jpg" class="d-block w-100" alt="...">
+	        				<div class="carousel-caption d-none d-md-block">
+	          					<a href="#paquete1" class="btn btn-warning fuentegd btn-lg colorarribax">Ver promoción</a>
+	        				</div>
+	      				</div>
+	      			
+					<!--CARRUSEL ITEM 2-->
+
+	      				<div class="carousel-item">
+	        				<img src="imagenes/ensa_1.jpeg" class="d-block w-100" alt="...">
+	       					<div class="carousel-caption d-none d-md-block">
+	          					<a href="#paquete2" class="btn btn-warning fuentegd btn-lg colorarribax">Ver promoción</a>
+	        				</div>
+	      				</div>
+
+	      			<!--CARRUSEL ITEM 3-->
+
+	      				<div class="carousel-item">
+	        				<img src="imagenes/ensa_2.jpeg" class="d-block w-100" alt="...">
+	        				<div class="carousel-caption d-none d-md-block">
+	        			 		<a href="#paquete3" class="btn btn-warning fuentegd btn-lg colorarribax">Ver promoción</a>
+	        				</div>
+	      				</div>
+
+	      			<!--CARRUSEL ITEM 4-->
+
+	      				<div class="carousel-item">
+	        				<img src="imagenes/ensa_3.jpeg" class="d-block w-100" alt="...">
+	        				<div class="carousel-caption d-none d-md-block">
+	          					<a href="#paquete4" class="btn btn-warning fuentegd btn-lg colorarribax">Ver promoción</a>
+	          				</div>
+	        			</div>
+
+	        		<!--CARRUSEL ITEM 5-->
+
+	        			<div class="carousel-item">
+	        				<img src="imagenes/ensa_4.jpeg" class="d-block w-100" alt="...">
+	        				<div class="carousel-caption d-none d-md-block">
+	          					<a href="#paquete5" class="btn btn-warning fuentegd btn-lg colorarribax">Ver promoción</a>
+	        				</div>
+	      				</div>
+	    		
+	    			</div>
+
+	    		<!--CONTROL CARRUSEL-->
+
+	    			<a class="carousel-control-prev colorh1" href="#carouselH" role="button" data-slide="prev">
+	      				<span class="carousel-control-prev-icon " aria-hidden="true"></span>
+	      				<span class="sr-only">Previous</span>
+	    			</a>
+			   		
+			   		<a class="carousel-control-next colorh1" href="#carouselH" role="button" data-slide="next">
+			      		<span class="carousel-control-next-icon " aria-hidden="true"></span>
+			      		<span class="sr-only">Next</span>
+			   		</a>
+
+	  			</div>
+			</div>
+
+		</div>
+	</div>
+
+	<br>
+
+<!--CARTA 1-->
+	
+	<div class="colorh1 fuente2" id="paquete1">&emsp;</div>
+	<br>
+	<br>
+
+	<div class="container col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-9 ml-auto mr-auto">
+		<div class="card colorcarta">
+			<img src="imagenes/ensa_1.jpeg" class="card-img-top" alt="">
+		  	<div class="card-body">
+		    	<h5 class="card-title colorfuentecarta">ENSALADA 1</h5>
+		    	<p class="card-text colorfuentecarta">Aniadir elementos de ensalada1.</p>
+		  	</div>
+		  	
+		  	<div class="card-footer mr-auto ml-auto">
+		      	<div class="centrarboton">
+
+	<!--VENTANA EMERGENTE PRINCIPAL-->
+
+					<a class="btn btn-warning fuentegd btn-gd colorarribax" href="#vemergente1" data-toggle="modal">Ordenar ahora</a>
+					
+					<div class="modal fade" id="vemergente1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-warning">
+									<div class="container">
+										<img src="imagenes/tomate.png" width="70" height="70" class="d-inline-block align-center"alt="">
+										<p class="colornegro fuentegd fuente1 centrarh">ORDENAR</p>
+									</div>
+								</div>
+
+					<!--FORMULARIO ORDENAR PEDIDO 1-->
+								<form name="formularioOrdenarPromo1" method="post" action="" id="formularioOrdenarPromo1">
+
+									<div class="modal-body">
+										
+										<p class="colornegro fuente5 centrarh">Ingresa tu dirección para disfrutar de tu ensalada</p>
+										<div class="form-row">
+											<div class="form-group col-md-8 ml-auto mr-auto">
+			      								<input type="text" class="form-control centrarh fuente5 fuentegd" id="nombre" required placeholder="Calle #, Col. XXX">
+			    							</div>
+											<div class="form-group col-md-8 ml-auto mr-auto">
+												<input class="form-control centrarh fuente5 colornegro fuentegd" type="password" required placeholder="Contraseña" id="password">
+										    </div>
+										</div>
+
+										<div class="container text-center">
+											<button type="button" class="btn btn-danger btn-lg ml-auto mr-auto" data-dismiss="modal">Cancelar</button>
+											&emsp;
+											<button type="submit" class="btn btn-success fuentegd colorarribax fuente5">Aceptar</button>
+										</div>
+											
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+		    </div>
+		</div>
+	</div>
+
+	<br>
+
+<!--CARTA 2-->
+	
+	<div class="colorh1 fuente2" id="paquete2">&emsp;</div>
+	<br>
+	<br>
+
+	<div class="container col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-9 ml-auto mr-auto">
+		<div class="card colorcarta">
+			<img src="imagenes/ensa_3.jpeg" class="card-img-top" alt="">
+		  	<div class="card-body">
+		    	<h5 class="card-title colorfuentecarta">ENSALADA 2</h5>
+		    	<p class="card-text colorfuentecarta">Basta con introducir el servicio y el monto de tu pago, la transacción viajara segura y automaticamente se ira al historial.</p>
+		  	</div>
+		  	
+		  	<div class="card-footer mr-auto ml-auto">
+		      	<div class="centrarboton">
+
+	<!--VENTANA EMERGENTE PRINCIPAL-->
+
+					<a class="btn btn-warning fuentegd btn-gd colorarribax" href="#vemergente1" data-toggle="modal">Ordenar ahora</a>
+					
+					<div class="modal fade" id="vemergente1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-warning">
+									<img src="imagenes/tomate.png" width="70" height="70" class="d-inline-block align-center"alt="">
+									<p class="colornegro fuentegd fuente1 centrarh">
+									ORDENAR
+									</p>
+								</div>
+
+					<!--FORMULARIO ORDENAR PEDIDO 2-->
+								<form name="formularioOrdenarPromo2" method="post" action="" id="formularioOrdenarPromo2">
+
+									<div class="modal-body">
+										
+										<p class="colornegro fuente5 centrarh">Ingresa tu dirección para disfrutar de tu ensalada</p>
+										<div class="form-row">
+											<div class="form-group col-md-8 ml-auto mr-auto">
+			      								<input type="text" class="form-control centrarh fuente5 fuentegd" id="nombre" required placeholder="Calle #, Col. XXX">
+			    							</div>
+											<div class="form-group col-md-8 ml-auto mr-auto">
+												<input class="form-control centrarh fuente5 colornegro fuentegd" type="password" required placeholder="Contraseña" id="password">
+										    </div>
+										</div>
+
+										<div class="container text-center">
+											<button type="button" class="btn btn-danger btn-lg ml-auto mr-auto" data-dismiss="modal">Cancelar</button>
+											&emsp;
+											<button type="submit" class="btn btn-success fuentegd colorarribax fuente5">Aceptar</button>
+										</div>
+											
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+		    </div>
+		</div>
+	</div>
+
+	<br>
+
+<!--CARTA 3-->
+	
+	<div class="colorh1 fuente2" id="paquete3">&emsp;</div>
+	<br>
+	<br>
+
+	<div class="container col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-9 ml-auto mr-auto">
+		<div class="card colorcarta">
+			<img src="imagenes/ensa_5.jpeg" class="card-img-top" alt="">
+		  	<div class="card-body">
+		    	<h5 class="card-title colorfuentecarta">ENSALADA 3</h5>
+		    	<p class="card-text colorfuentecarta">Añadir ensalada x.</p>
+		  	</div>
+		  	
+		  	<div class="card-footer mr-auto ml-auto">
+		      	<div class="centrarboton">
+
+	<!--VENTANA EMERGENTE PRINCIPAL-->
+
+					<a class="btn btn-warning fuentegd btn-gd colorarribax" href="#vemergente1" data-toggle="modal">Ordenar ahora</a>
+					
+					<div class="modal fade" id="vemergente1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-warning">
+									<div class="container">
+										<img src="imagenes/tomate.png" width="70" height="70" class="d-inline-block align-center"alt="">
+										<p class="colornegro fuentegd fuente1 centrarh">
+										ORDENAR
+										</p>
+									</div>
+								</div>
+
+					<!--FORMULARIO ORDENAR PEDIDO 3-->
+								<form name="formularioOrdenarPromo3" method="post" action="" id="formularioOrdenarPromo3">
+
+									<div class="modal-body">
+										
+										<p class="colornegro fuente5 centrarh">Ingresa tu dirección para disfrutar de tu ensalada</p>
+										<div class="form-row">
+											<div class="form-group col-md-8 ml-auto mr-auto">
+			      								<input type="text" class="form-control centrarh fuente5 fuentegd" id="nombre" required placeholder="Calle #, Col. XXX">
+			    							</div>
+											<div class="form-group col-md-8 ml-auto mr-auto">
+												<input class="form-control centrarh fuente5 colornegro fuentegd" type="password" required placeholder="Contraseña" id="password">
+										    </div>
+										</div>
+
+										<div class="container text-center">
+											<button type="button" class="btn btn-danger btn-lg ml-auto mr-auto" data-dismiss="modal">Cancelar</button>
+											&emsp;
+											<button type="submit" class="btn btn-success fuentegd colorarribax fuente5">Aceptar</button>
+										</div>
+											
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+		    </div>
+		</div>
+	</div>
+
+	<br>
+
+<!--CARTA 4-->
+	
+	<div class="colorh1 fuente2" id="paquete4">&emsp;</div>
+	<br>
+	<br>
+
+	<div class="container col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-9 ml-auto mr-auto">
+		<div class="card colorcarta">
+			<img src="imagenes/ensa_4.jpeg" class="card-img-top" alt="">
+		  	<div class="card-body">
+		    	<h5 class="card-title colorfuentecarta">ENSALADA 4</h5>
+		    	<p class="card-text colorfuentecarta">ensalada y</p>
+		  	</div>
+		  	
+		  	<div class="card-footer mr-auto ml-auto">
+		      	<div class="centrarboton">
+
+	<!--VENTANA EMERGENTE PRINCIPAL-->
+
+					<a class="btn btn-warning fuentegd btn-gd colorarribax" href="#vemergente1" data-toggle="modal">Ordenar ahora</a>
+					
+					<div class="modal fade" id="vemergente1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-warning">
+									<div class="container">
+										<img src="imagenes/tomate.png" width="70" height="70" class="d-inline-block align-center"alt="">
+										<p class="colornegro fuentegd fuente1 centrarh">
+										ORDENAR
+										</p>
+									</div>
+								</div>
+
+					<!--FORMULARIO ORDENAR PEDIDO 4-->
+								<form name="formularioOrdenarPromo4" method="post" action="" id="formularioOrdenarPromo4">
+
+									<div class="modal-body">
+										
+										<p class="colornegro fuente5 centrarh">Ingresa tu dirección para disfrutar de tu ensalada</p>
+										<div class="form-row">
+											<div class="form-group col-md-8 ml-auto mr-auto">
+			      								<input type="text" class="form-control centrarh fuente5 fuentegd" id="nombre" required placeholder="Calle #, Col. XXX">
+			    							</div>
+											<div class="form-group col-md-8 ml-auto mr-auto">
+												<input class="form-control centrarh fuente5 colornegro fuentegd" type="password" required placeholder="Contraseña" id="password">
+										    </div>
+										</div>
+
+										<div class="container text-center">
+											<button type="button" class="btn btn-danger btn-lg ml-auto mr-auto" data-dismiss="modal">Cancelar</button>
+											&emsp;
+											<button type="submit" class="btn btn-success fuentegd colorarribax fuente5">Aceptar</button>
+										</div>
+											
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+		    </div>
+		</div>
+	</div>
+
+	<br>
+
+<!--CARTA 5-->
+	
+	<div class="colorh1 fuente2" id="paquete5">&emsp;</div>
+	<br>
+	<br>
+
+	<div class="container col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-9 ml-auto mr-auto">
+		<div class="card colorcarta">
+			<img src="imagenes/ensa_2.jpeg" class="card-img-top" alt="">
+		  	<div class="card-body">
+		    	<h5 class="card-title colorfuentecarta">ENSALADA 5</h5>
+		    	<p class="card-text colorfuentecarta">ensalada z</p>
+		  	</div>
+		  	
+		  	<div class="card-footer mr-auto ml-auto">
+		      	<div class="centrarboton">
+
+	<!--VENTANA EMERGENTE PRINCIPAL-->
+
+					<a class="btn btn-warning fuentegd btn-gd colorarribax" href="#vemergente1" data-toggle="modal">Ordenar ahora</a>
+					
+					<div class="modal fade" id="vemergente1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-warning">
+									<div class="container">
+										<img src="imagenes/tomate.png" width="70" height="70" class="d-inline-block align-center"alt="">
+										<p class="colornegro fuentegd fuente1 centrarh">
+										ORDENAR
+										</p>
+									</div>
+								</div>
+
+					<!--FORMULARIO ORDENAR PEDIDO 5-->
+								<form name="formularioOrdenarPromo5" method="post" action="" id="formularioOrdenarPromo5">
+
+									<div class="modal-body">
+										
+										<p class="colornegro fuente5 centrarh">Ingresa tu dirección para disfrutar de tu ensalada</p>
+										<div class="form-row">
+											<div class="form-group col-md-8 ml-auto mr-auto">
+			      								<input type="text" class="form-control centrarh fuente5 fuentegd" id="nombre" required placeholder="Calle #, Col. XXX">
+			    							</div>
+											<div class="form-group col-md-8 ml-auto mr-auto">
+												<input class="form-control centrarh fuente5 colornegro fuentegd" type="password" required placeholder="Contraseña" id="password">
+										    </div>
+										</div>
+
+										<div class="container text-center">
+											<button type="button" class="btn btn-danger btn-lg ml-auto mr-auto" data-dismiss="modal">Cancelar</button>
+											&emsp;
+											<button type="submit" class="btn btn-success fuentegd colorarribax fuente5">Aceptar</button>
+										</div>
+											
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+		    </div>
+		</div>
+	</div>
+
+	<br>
+
+
+
+<!--CARTA 6.0-->
+
+	<div class="derechaboton">
+		<div class="" id="reftipousuario">
+			<a class="btn colorh1 fuente5 colorblanco colorarribax" href="#arriba">Volver arriba</a>
+		</div>
+	</div>
+	<br>
+	<br>
+
+	<div class="container col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-9 ml-auto mr-auto">
+		<div class="card colorcarta">
+			<img src="imagenes/h6.jpg" class="card-img-top" alt="">
+		  	<div class="card-body">
+		    	<h5 class="card-title colorfuentecarta">Conocenos</h5>
+		    	<p class="card-text colorfuentecarta">Somos una empresa de e-comerce especializada en la elaboración de alimentos saludables, pues nuestros clientes son lo mas importante.</p>
+		  	</div>
+		</div>
+	</div>
+
+	<br>
+
+<!--CARTA 6.123-->
+
+	<div class="container col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-9 ml-auto mr-auto">
+		<div class="card-deck">
+			<div class="card colorcarta">
+			    <img src="imagenes/h7.jpg" class="card-img-top" alt="">
+			    <div class="card-body">
+			      	<h5 class="card-title colorfuentecarta">Misión</h5>
+			      	<p class="card-text colorfuentecarta">Ser la mejor opción para la alimentación que buscan una vida saludable.</p>
+			    </div>
+			    
+			    <!--
+			    <div class="card-footer ml-auto mr-auto">
+			      	<small class="text-muted">Para alumnos</small>
+			    </div>
+				-->
+			</div>
+			
+			<div class="card colorcarta">
+			    <img src="imagenes/h8.jpg" class="card-img-top" alt="">
+			    <div class="card-body">
+			      	<h5 class="card-title colorfuentecarta">Visión</h5>
+			      	<p class="card-text colorfuentecarta">Consolidarnos como una de las mejores empresas de comida saludable, ser reconocidos y logra el prestigio necesario para comenzar la expansión fuera de la CDMD para el año 2021</p>
+			    </div>
+			    
+			    <!--
+			    <div class="card-footer ml-auto mr-auto">
+			      	<small class="text-muted">Para alumnos</small>
+			    </div>
+				-->
+			</div>
+			
+			
+		</div>
+	</div>
+
+	<br>
+
+<!--CARTA 7-->
+
+	<div class="container col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-9 ml-auto mr-auto">
+		<div class="card colorcarta">
+			<img src="imagenes/h10.jpg" class="card-img-top" alt="">
+		  	<div class="card-body">
+		    	<h5 class="card-title colorfuentecarta">SMART FOOD</h5>
+		    	<p class="card-text colorfuentecarta">
+		    		Ofrecer comida saludable y bajas en calorias ademas de un tiempo de preparación y servido que va de los 5 a 20 min, esto ocurre gracias a que puedes pre ordenar la comida mediante una app, así como el propio diseño de tu ensalada
+		   		</p>
+		  	</div>
+		</div>
+	</div>
+
+	<br>
+
+<!--CARTA 8-->
+
+	<div class="derechaboton">
+		<div class="" id="refdesarrollo">
+			<a class="btn colorh1 fuente5 colorblanco colorarribax" href="#arriba">Volver arriba</a>
+		</div>
+	</div>
+	<br>
+
+<!--FOOTER DE LA APLICACIÓN-->
+
+	<footer class="a bg-success">
+		<div class="container">
+			<div class="main row">
+				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 col-xl-9">
+					<pa>
+						Escuela Superior de Cómputo
+					</pa>
+				</div>
+				
+				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-xl-3">
+					<pa>
+						SMART FOOD © 2019
+					</pa>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<br>
+
+<!--FOOTER CON LA INFORMACIÓN-->
+
+	<div class="container">
+		<div class="main row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h1 class="d">
+					INSTITUTO POLITÉCNICO NACIONAL
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<footer class="a bg-success">
+		<div class="container">
+			<div class="main row">
+				<div class="centrarh col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<pa>
+						Developed by Oscar Jair Rodriguez Lara
+					</pa>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal" id="loading" tabindex="-1" role="dialog" aria-labelledby="Cargando" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body" style="text-align: center;">
+					<div class="row">
+						<div class="col-md-12 col-xs-12">
+							<span title="Cargando..." style="font-size:72px">
+								<i class="fa fa-circle-o-notch fa-spin fa-fw"></i>
+							</span>
+						</div>
+						<div class="col-md-12 col-xs-12">
+							<span title="Cargando..." style="font-size:32px">
+								Cargando, por favor, espera...
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="modal fade" id="custom-message" tabindex="-1" role="dialog" aria-labelledby="Mensaje" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"></h4>
+				</div>
+				<div class="modal-body">
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="custom-message-close" class="btn" data-dismiss="modal"></button>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<!--SCRIPTS JQUERY Y BOOTSTRAP-->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$('#loading').modal('show');
+			if(!localStorage.getItem('logged')){
+				$(location).attr('href', 'index');
+			}
+			function getUserData(){
+				$.ajax({
+					type: "POST",
+					data: {"usernm": localStorage.getItem("id")},
+					url: "https://testingphpzone.com/~pekochu/ipn/escom/endpoints/users/get",
+					success: function(response) {
+						$('#loading').modal('hide');
+						$('.boletausuario').html(response.user.idUsuario);
+					},
+					error: function(xhr, ajaxOptions, thrownError){
+						$('#loading').modal('hide');
+						$('#custom-message').children().find('.modal-title').first().text('No se pudo iniciar sesión').addClass('red');
+						$('#custom-message').children().find('.modal-body').first().html($('<p>').html(xhr.responseJSON.status).addClass('lead'));
+						$('#custom-message').children().find('.modal-footer').first().html($('<button>').attr('data-dismiss', 'modal').attr('class', 'btn btn-success').html('Cerrar'));
+						$('#custom-message-close').text('Cerrar');
+						$('#custom-message').modal('show');
+					}
+				});
+			}
+			setTimeout(getUserData, 5e2);
+		});
+		$('#logout').on('click', function(){
+			localStorage.removeItem('logged');
+			$(location).attr('href', 'index');
+		});
+	</script>
+</body>
+</html>

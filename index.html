@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--HEAD-->
+
+	<meta charset="UTF-8">
+	<title>SMART FOOD</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="shortcut icon" href="imagenes/tomate.ico" >
+	<style>
+		body {
+			background-image: url(imagenes/frutas.png);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}		
+	</style>
+
+</head>
+
+<body>
+	
+<!--HEADER DE LA APLICACIÓN-->
+
+	<nav class="navbar navbar-dark bg-success col-xl-12 ml-auto mr-auto">
+		<div class="mr-auto ml-auto">
+  			<p class="fuente1 fuentegd colorblanco">
+    		<img src="imagenes/tomate.png" width="70" height="70" class="d-inline-block align-center"alt="">
+    		SMART FOOD
+  			</p>
+  		</div>
+
+  	<!--FORMULARIO DE INICIO DE SESIÓN-->
+
+		<form name="formularioInicioSesion" method="post" id="formularioInicioSesion">
+			<div class="form-row">
+			    <div class="form-group col-md-4 ml-auto">
+				    <input type="text" class="form-control fuente5 fuentegd" required placeholder="Usuario" name="usernm">
+			    </div>
+			    <div class="form-group col-md-4 ml-auto">
+		      		<input type="password" class="form-control fuente5 fuentegd" required placeholder="Contraseña" name="passwd">
+			    </div>
+			    <div class="form-group col-md-4 ml-auto">
+					<button type="submit" class="btn btn-warning fuentegd colorarribax fuente5">Iniciar sesión</button>
+			    </div>
+			</div>
+		</form>
+	</nav>
+
+	<br>
+
+<!--CONTENIDO DE LA PAGINA-->
+
+	<div class="container">
+		<div class="main row">
+
+	<!--MENSAJE-->
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mr-auto">
+				<h1>
+					<br>
+					SMART FOOD<br>
+					Recuerda<br>
+					eres lo que comes<br>
+					<br>
+					<br>
+					Ahora al alcance de tus manos puedes realizar tus propias ensaladas
+					<br>
+					<br>
+				</h1>
+			</div>
+			
+	<!--FORMULARIO DE REGISTRO-->
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 bordesredondos colorh1 ml-auto">
+				<form name="formularioRegistro" method="post" action="indexsmart.html" id="formularioRegistro">
+					<h1 class="a">
+						¡CREA TU CUENTA AHORA!
+					</h1>
+
+			<!--NOMBRE Y APELLIDO-->
+					
+					<div class="form-row">
+					    <div class="form-group col-md-6 ml-auto mr-auto">
+					      	<input type="text" class="form-control fuente5 fuentegd" id="nombre" required placeholder="Nombre">
+					    </div>
+					    <div class="form-group col-md-6 ml-auto mr-auto">
+					      	<input type="text" class="form-control fuente5 fuentegd" id="apellidos" required placeholder="Apellido">
+					    </div>
+					</div>
+
+			<!--CELULAR Y CORREO-->
+
+					<div class="form-row">
+					    <div class="form-group col-md-6 ml-auto mr-auto">
+					      	<input type="text" class="form-control fuente5 fuentegd" id="celular" required placeholder="Celular">
+					    </div>
+					    <div class="form-group col-md-6 ml-auto mr-auto">
+					      	<input type="email" class="form-control fuente5 fuentegd" id="correo" required placeholder="Correo">
+					    </div>
+					</div>
+
+			<!--BOLETA-->
+
+					<div class="form-row">
+					    <div class="form-group col-md-6 ml-auto mr-auto">
+					      	<input type="text" class="form-control fuente5 fuentegd" id="usuario" required placeholder="Usuario">
+					    </div>
+					</div>
+
+					<br>
+
+			<!--CONTRASEÑAS-->
+
+					<div class="form-row">
+					    <div class="form-group col-md-6 ml-auto mr-auto">
+					      	<input type="password" class="form-control fuente5 fuentegd" id="pass1" required placeholder="Contraseña">
+					    </div>
+					    <div class="form-group col-md-6 ml-auto mr-auto">
+					      	<input type="password" class="form-control fuente5 fuentegd" id="pass2" required placeholder="Confirmar contraseña">
+					    </div>
+					</div>
+
+			<!--MENSAJE DE ADVERTENCIA-->
+
+					<div class="form-row">
+					    <div class="form-group col-md-10 ml-auto mr-auto">
+					    	<h1 class="b">
+								Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de datos y la Política de cookies. <br>
+								
+							</h1>
+					    </div>
+					</div>
+
+			<!--BOTÓN SUBMIT-->
+
+					<div class="form-row text-center">
+						<div class="form-group col-md-12">
+							<button type="submit" class="btn btn-warning fuentegd colorarribax fuente5">Registrate</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<br>
+	
+<!--FOOTER DE LA APLICACIÓN-->
+
+	<header class="a bg-success">
+		<div class="container">
+			<div class="main row">
+				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 col-xl-9">
+					<pa>
+						Escuela Superior de Cómputo
+					</pa>
+				</div>
+				
+				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-xl-3">
+					<pa>
+						SMART FOOD © 2019
+					</pa>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<br>
+
+<!--FOOTER CON LA INFORMACIÓN-->
+
+	<div class="container">
+		<div class="main row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h1 class="d">
+					INSTITUTO POLITÉCNICO NACIONAL
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<footer class="a bg-success">
+		<div class="container">
+			<div class="main row">
+				<div class="centrarh col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<pa>
+						Developed by Oscar Jair Rodriguez Lara
+					</pa>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<div class="modal" id="loading" tabindex="-1" role="dialog" aria-labelledby="Cargando" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body" style="text-align: center;">
+					<div class="row">
+						<div class="col-md-12 col-xs-12">
+							<span title="Cargando..." style="font-size:72px">
+								<i class="fa fa-circle-o-notch fa-spin fa-fw"></i>
+							</span>
+						</div>
+						<div class="col-md-12 col-xs-12">
+							<span title="Cargando..." style="font-size:32px">
+								Cargando, por favor, espera...
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="modal fade" id="custom-message" tabindex="-1" role="dialog" aria-labelledby="Mensaje" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"></h4>
+				</div>
+				<div class="modal-body">
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="custom-message-close" class="btn" data-dismiss="modal"></button>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+<!--SCRIPTS JQUERY Y BOOTSTRAP-->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			if(localStorage.getItem('logged')){
+				$(location).attr('href', 'homesmart');
+			}
+		});
+		$('#formularioInicioSesion').on('submit', function(e){
+			$('#loading').modal('show');
+			e.preventDefault();
+			$.ajax({
+				type: "POST",
+				data: $(this).serialize(),
+				url: "https://testingphpzone.com/~pekochu/ipn/escom/endpoints/users/login",
+				success: function(response) {
+					localStorage.setItem('logged', true);
+					localStorage.setItem('id', response.id);
+					setTimeout(function(){ 
+						$('#loading').modal('hide'); 
+						$(location).attr('href', 'index');
+					}, 2e3);
+				},
+				error: function(xhr, ajaxOptions, thrownError){
+					setTimeout(function(){ 
+						$('#loading').modal('hide'); 
+						$('#custom-message').children().find('.modal-title').first().text('No se pudo iniciar sesión').addClass('red');
+						$('#custom-message').children().find('.modal-body').first().html($('<p>').html(xhr.responseJSON.status).addClass('lead'));
+						$('#custom-message').children().find('.modal-footer').first().html($('<button>').attr('data-dismiss', 'modal').attr('class', 'btn btn-success').html('Cerrar'));
+						$('#custom-message-close').text('Cerrar');
+						$('#custom-message').modal('show');
+					}, 2e3);
+				}
+			});
+
+		});
+	</script>
+</body>
+</html>

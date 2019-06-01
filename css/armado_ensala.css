@@ -1,0 +1,220 @@
+
+#envase{
+
+}
+#verdura{
+	float:right;
+	width: 1650px;
+    height: 140px;
+
+}
+#lechuga{
+	margin-left:300px;
+	float:left;
+	height:140px;
+	width:150px;
+
+}
+#jitomate{
+	float:left;
+	height:140px;
+	width:150px;
+}
+#pepino{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#aguacate{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#cebolla{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#zanahoria{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#espinacas{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#papas{
+	float:left;
+	height:140px;
+	width:150px;
+}
+#fruta{
+	float:right;
+	width: 1650px;
+    height: 140px;
+	
+}
+#mango{
+	margin-left:400px;
+		float:left;
+	height:140px;
+	width:150px;
+}
+#naranja{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#durazno{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#naranja{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#fresa{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#kiwi{
+	float:left;
+	height:140px;
+	width:150px;
+}
+
+#carne{
+	float:right;
+	width: 1650px;
+    height: 140px;
+	background-color:none;
+}
+#pollo{
+	margin-left:300px;
+		float:left;
+	height:140px;
+	width:150px;
+}
+#pescado{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#atun{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#salmon{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#pastor{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#bistec{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#jamon{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#huevo{
+		float:left;
+	height:140px;
+	width:150px;
+}
+#aderezos{
+	float:right;
+	width: 1650px;
+    height: 140px;
+
+}
+#ranch{
+	margin-left:400px;
+			float:left;
+	height:140px;
+	width:150px;
+}
+#mil-islas{
+			float:left;
+	height:140px;
+	width:150px;
+}
+#chipotle{
+			float:left;
+	height:140px;
+	width:150px;
+}
+#jalapenio{
+			float:left;
+	height:140px;
+	width:150px;
+}
+#aceite{
+	float:left;
+	height:140px;
+	width:150px;
+}
+#recipiente{
+	float:right;
+	width: 1650px;
+    height: 310px;
+
+}
+	
+
+ 
+ #list-verd{ 
+	margin-right:180px;
+	float:right;
+	width: 100px;
+    height: 300px;
+	
+ }
+  #list-fruta{ 
+	float:right;
+	width: 120px;
+    height: 300px;
+
+ }
+  #list-carne{ 
+
+	float:right;
+	width: 120px;
+    height: 300px;
+
+ }
+  #list-adere{ 
+	float:right;
+	width: 120px;
+    height: 300px;
+
+ }
+ 	#armar{
+	float:right;
+	width: 350px;    height: 300px;
+	background-image:url("../ingredientes/plato.png");
+	background-size:cover;
+	}
+ #espacio{
+	 
+	 float:right;
+	 width:120px;
+	 height:300px;
+	 
+ }
+ 
+ 
+ 

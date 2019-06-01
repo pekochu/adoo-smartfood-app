@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--HEAD-->
+
+	<meta charset="UTF-8">
+	<title>SMART FOOD</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="shortcut icon" href="imagenes/tomate.ico" >
+	<style>
+		body {
+			background-image: url(imagenes/frutas.png);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}		
+	</style>
+
+</head>
+
+<body>
+	
+<!--HEADER DE LA APLICACIÓN-->
+
+	<nav class="navbar navbar-dark bg-success col-xl-12 ml-auto mr-auto">
+		<div class="mr-auto ml-auto">
+  			<p class="fuente1 fuentegd colorblanco" id="arriba">
+    		<img src="imagenes/tomate.png" width="70" height="70" class="d-inline-block align-center"alt="">
+    		SMART FOOD
+  			</p>
+  		</div>
+
+  	<!--Usuario-->
+
+		<div class="ml-auto mr-auto">
+    		<p class="fuente3 colorblanco boletausuario" href="">USUARIO</p>
+    	</div>
+	</nav>
+
+	<br>
+
+<!--MENU PRINCIPAL-->
+
+	<nav class="navbar navbar-dark colorh1 sticky-top navbar-toggleable-xs">
+		<p class="navbar-brand fuente1" href="homesmart">
+			Menú principal
+		</p>
+
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+
+	<!--OPCIONES DEL MENU-->
+
+		<div class="mr-auto collapse navbar-collapse" id="navbarTogglerDemo01">
+  			<div class="navbar-nav text-center">
+				<a class="nav-item nav-link fuente2 colorarriba" href="homesmart">Inicio&emsp;&emsp;&emsp;&emsp;&emsp;</a>
+			        
+		        <a class="nav-item active nav-link fuente2 colorarriba" href="perfilsmart">
+		     		Mi perfil &emsp; &emsp;&emsp;
+			    </a>    
+
+			    <a class="nav-item nav-link fuente2 colorarriba" href="ordenar">
+			    Ordenar &emsp; &emsp;&emsp;
+		        </a>
+
+				<a class="nav-item nav-link fuente2 colorarriba" href="historialsmart">Historial &emsp; &emsp; &emsp;</a>
+
+				<a class="nav-item nav-link fuente2 colorarriba" id="logout">Salir&emsp; &emsp; &emsp;&emsp;&emsp;</a>
+    		</div>
+		</div>
+	</nav>
+	
+	<br>
+
+<!--CONTENIDO DE LA PAGINA-->
+	
+	<div class="container">
+		<div class="main row">
+
+	<!--ACTUALIZAR PERFIL-->
+
+			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 bordesredondos colorh1 ml-auto mr-auto">
+
+				<h1 class="centrarh">MI PERFIL</h1>
+			
+				<div class="form-row">
+				    <div class="form-group col-md-9 ml-auto mr-auto">
+				      	<input type="text" class="form-control centrarh fuente5 fuentegd" id="nombre" placeholder="Nombre Actual">
+				    </div>
+				</div>
+
+				<div class="form-row">
+				    <div class="form-group col-md-9 ml-auto mr-auto">
+				      	<input type="text" class="form-control centrarh fuente5 fuentegd" id="apellido" placeholder="Apellido Actual">
+				    </div>
+				</div>
+
+				<div class="form-row">
+				    <div class="form-group col-md-9 ml-auto mr-auto">
+				      	<input type="text" class="form-control centrarh fuente5 fuentegd" id="celular" placeholder="Celular Actual">
+				    </div>
+				</div>
+
+				<div class="form-row">
+				    <div class="form-group col-md-9 ml-auto mr-auto">
+				      	<input type="text" class="form-control centrarh fuente5 fuentegd" id="correo" placeholder="Correo Actual">
+				    </div>
+				</div>
+
+				<div class="form-row text-center">
+					<div class="form-group col-md-12">
+						<a class="btn btn-warning fuentegd btn-lg colorarribax" href="#vemergente2" data-toggle="modal">Actualizar perfil</a>
+
+	<!--VENTANA EMERGENTE PARA ACTUALIZAR PERFIL-->
+						<form name="formularioOrdenarPromo1" method="post" action="" id="formularioActualizarInfo">
+
+							<div class="modal fade" id="vemergente2">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header bg-warning">
+											<div class="container">
+												<p class="colornegro fuentegd fuente1 centrarh">Actualizar perfil</p>
+											</div>
+										</div>
+
+										<div class="modal-body">
+											<div class="form-row">
+												<div class="form-group col-md-6 ml-auto mr-auto">
+													<input class="form-control centrarh fuente5 colornegro fuentegd" type="password" required placeholder="Contraseña" id="password">
+											    </div>
+											</div>
+
+											<div class="container text-center">
+												<button type="button" class="btn btn-danger btn-lg ml-auto mr-auto" data-dismiss="modal">Cancelar</button>
+												&emsp;
+												<button type="submit" class="btn btn-success btn-lg">Aceptar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+				
+	<!--ACTUALIZAR CONTRASEÑA-->
+
+			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 bordesredondos colorh1 ml-auto mr-auto">
+
+				<h1 class="centrarh">CONTRASEÑA</h1>
+
+				<div class="form-row">
+				    <div class="form-group col-md-10 ml-auto mr-auto">
+				      	<input type="password" class="form-control centrarh fuente5 fuentegd" id="pass2" placeholder="Nueva Contraseña">
+				    </div>
+				</div>
+
+				<div class="form-row">
+				    <div class="form-group col-md-10 ml-auto mr-auto">
+				      	<input type="password" class="form-control centrarh fuente5 fuentegd" id="pass3" placeholder="Confirmar Nueva">
+				    </div>
+				</div>
+
+				<div class="form-row text-center">
+					<div class="form-group col-md-12">
+						<a class="btn fuentegd btn-warning btn-lg colorarribax" href="#vemergente3" data-toggle="modal">Actualizar contraseña</a>
+
+	<!--VENTANA EMERGENTE PARA ACTUALIZAR CONTRASEÑA-->
+						<form name="formularioActualizarContrasena" method="post" action="" id="formularioActualizarPass">
+
+							<div class="modal fade" id="vemergente3">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header bg-warning">
+											<div class="container">
+												<p class="colornegro fuentegd fuente1 centrarh">Actualizar contraseña</p>
+											</div>
+										</div>
+
+										<div class="modal-body">
+											<div class="form-row">
+												<div class="form-group col-md-6 ml-auto mr-auto">
+													<input class="form-control centrarh fuente5 colornegro fuentegd" type="password" required placeholder="Contraseña" id="password">
+											    </div>
+											</div>
+
+											<div class="container text-center">
+												<button type="button" class="btn btn-danger btn-lg ml-auto mr-auto" data-dismiss="modal">Cancelar</button>
+												&emsp;
+												<button type="submit" class="btn btn-success btn-lg">Aceptar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<br>
+				<br>
+
+	<!--ELIMINAR CUENTA-->
+			
+				<div class="form-row text-center">
+					<div class="form-group col-md-12">
+						<a class="btn  btn-danger btn-lg colorarribax" href="#vemergente4" data-toggle="modal">Eliminar cuenta</a>
+
+	<!--VENTANA EMERGENTE PARA ELIMINAR CUENTA-->
+						<form name="formularioActualizarContrasena" method="post" action="" id="formularioEliminarCuenta">
+
+							<div class="modal fade" id="vemergente4">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header bg-warning">
+											<div class="container">
+												<p class="colornegro fuentegd fuente1 centrarh">Eliminar cuenta</p>
+											</div>
+										</div>
+
+										<div class="modal-body">
+											<div class="form-row">
+												<div class="form-group col-md-6 ml-auto mr-auto">
+													<input class="form-control centrarh fuente5 colornegro fuentegd" type="password" required placeholder="Contraseña" id="password">
+											    </div>
+											</div>
+
+											<div class="container text-center">
+												<button type="button" class="btn btn-danger btn-lg ml-auto mr-auto" data-dismiss="modal">Cancelar</button>
+												&emsp;
+												<button type="submit" class="btn btn-success btn-lg">Aceptar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<br>
+
+<!--FOOTER DE LA APLICACIÓN-->
+
+	<footer class="a bg-success">
+		<div class="container">
+			<div class="main row">
+				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 col-xl-9">
+					<pa>
+						Escuela Superior de Cómputo
+					</pa>
+				</div>
+				
+				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-xl-3">
+					<pa>
+						SMART FOOD © 2019
+					</pa>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<br>
+
+<!--FOOTER CON LA INFORMACIÓN-->
+
+	<div class="container">
+		<div class="main row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h1 class="d">
+					INSTITUTO POLITÉCNICO NACIONAL
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<footer class="a bg-success">
+		<div class="container">
+			<div class="main row">
+				<div class="centrarh col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<pa>
+						Developed by Oscar Jair Rodriguez Lara
+					</pa>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal" id="loading" tabindex="-1" role="dialog" aria-labelledby="Cargando" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body" style="text-align: center;">
+						<div class="row">
+							<div class="col-md-12 col-xs-12">
+								<span title="Cargando..." style="font-size:72px">
+									<i class="fa fa-circle-o-notch fa-spin fa-fw"></i>
+								</span>
+							</div>
+							<div class="col-md-12 col-xs-12">
+								<span title="Cargando..." style="font-size:32px">
+									Cargando, por favor, espera...
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="modal fade" id="custom-message" tabindex="-1" role="dialog" aria-labelledby="Mensaje" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+					</div>
+					<div class="modal-footer">
+						<button type="button" id="custom-message-close" class="btn" data-dismiss="modal"></button>
+					</div>
+				</div>
+			</div>
+		</div>	
+	
+		<!--SCRIPTS JQUERY Y BOOTSTRAP-->
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				$('#loading').modal('show');
+				if(!localStorage.getItem('logged')){
+					$(location).attr('href', 'index');
+				}
+				function getUserData(){
+					$.ajax({
+						type: "POST",
+						data: {"usernm": localStorage.getItem("id")},
+						url: "https://testingphpzone.com/~pekochu/ipn/escom/endpoints/users/get",
+						success: function(response) {
+							$('#loading').modal('hide');
+							$('.boletausuario').html(response.user.idUsuario);
+							$('#nombre').val(response.user.nombre);
+							$('#apellido').val(response.user.apellido);
+							$('#celular').val(response.user.celular);
+							$('#correo').val(response.user.correo);
+						},
+						error: function(xhr, ajaxOptions, thrownError){
+							$('#loading').modal('hide');
+							$('#custom-message').children().find('.modal-title').first().text('No se pudo iniciar sesión').addClass('red');
+							$('#custom-message').children().find('.modal-body').first().html($('<p>').html(xhr.responseJSON.status).addClass('lead'));
+							$('#custom-message').children().find('.modal-footer').first().html($('<button>').attr('data-dismiss', 'modal').attr('class', 'btn btn-success').html('Cerrar'));
+							$('#custom-message-close').text('Cerrar');
+							$('#custom-message').modal('show');
+						}
+					});
+				}
+				setTimeout(getUserData, 5e2);
+			});
+			$('#logout').on('click', function(){
+				localStorage.removeItem('logged');
+				$(location).attr('href', 'index');
+			});
+		</script>
+
+</body>
+</html>
